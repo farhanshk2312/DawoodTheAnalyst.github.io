@@ -2399,6 +2399,32 @@ input, select, textarea {
 
 /* Button */
 
+/* Container for button + hidden image */
+.button-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hide image initially */
+.button-container img {
+  position: absolute;
+  top: 50%;                 /* vertically centered with the button */
+  left: 110%;               /* to the right side of the button */
+  transform: translateY(-50%);
+  width: 850px;              /* bigger size */
+  display: none;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+  z-index: 10;               /* make sure it appears above other content */
+}
+
+/* Show the image on hover */
+.button-container:hover img {
+  display: block;
+}
+
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -2432,7 +2458,8 @@ input, select, textarea {
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
-	}
+
+		}
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -2498,6 +2525,9 @@ input, select, textarea {
 			button.primary:hover,
 			.button.primary:hover {
 				background-color: #ef5e4a !important;
+
+				
+			
 			}
 
 			input[type="submit"].primary:active,
@@ -2533,6 +2563,9 @@ input, select, textarea {
 			}
 
 		}
+
+		
+
 
 /* Features */
 
