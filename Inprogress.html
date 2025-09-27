@@ -61,11 +61,13 @@
 						<a href="#one" class="more scrolly">Sneak peek</a>
 					</section>
 		        
-				<section class="spotlight">
+				              
+
+						<section class="spotlight">
 							<div class="image"><img src="images/Customer.jpg" alt="" /></div><div class="content">
-								<h4>E-commerce Customer & Product Analytics<br />
+								<h4>Loan Data Analysis & Default Risk Insights<br />
 								<!--sed ullamcorper</h2>--></h4>
-								<blockquote>This project explores a comprehensive e-commerce dataset containing customer, product, transaction, and clickstream data. The goal is to uncover actionable insights about customer behavior, product performance, and business KPIs, and to showcase advanced data analytics skills.</blockquote>
+								<blockquote>I’m gearing up to dive into a comprehensive analysis of a large-scale loan dataset, designed to uncover patterns in lending, borrower behavior, and repayment performance. This project will explore how borrower demographics, credit history, and loan characteristics influence default risk, providing actionable insights for smarter lending decisions.</blockquote>
 							<ul class="actions special">
 								<li style="margin-right: 620px;"><a href="" class="button primary disabled">Digging into Data</a></li>
 							</ul>
@@ -80,91 +82,135 @@
 							<header class="major">
 
                                								
-                                <h4 style="text-align: left; margin-left: 0;">Dataset Description:</h4>
+                                <h4 style="text-align: left; margin-left: 0;">What’s Coming:</h4>
 						
 								<blockquote style="text-align: left; margin-left: 0;">
-                                    <p>Customer Table: Detailed customer information including demographics, device type, and location.</p>
-                                    <P>Product Table: Fashion products with attributes like category, subcategory, article type, color, season, and usage.</P>                            
-									<P>Transaction Table: Every purchase made by a customer, including transaction amount, product metadata, payment status, and shipment details.</P>
-									<P>Clickstream Table: App usage events, session-level activity, and traffic source data.</P>
-                                </blockquote>
+									<h5 style="text-align: left; margin-left: 0;">Exploratory Data Analysis (EDA):</h5><br />
+                                    <p>Visualizing distributions of loan amounts, interest rates, and borrower demographics. Identifying trends, outliers, and patterns in repayment behavior.</p>
+                                   	<h5 style="text-align: left; margin-left: 0;">Credit & Risk Analysis:</h5><br />
+									<p>Deep dive into credit utilization, debt-to-income ratios, and the factors driving defaults.</p>
+									<h5 style="text-align: left; margin-left: 0;">Temporal Trends:</h5><br />
+									<p>Tracking loan issuance and repayment trends over time to understand evolving borrower behavior.</p>
+									<h5 style="text-align: left; margin-left: 0;">Feature Engineering:</h5><br />
+									<p>Creating new metrics like credit age, income-to-loan ratio, and late payment flags to highlight risk indicators.</p>
+									<h5 style="text-align: left; margin-left: 0;">Predictive Modeling (Planned):</h5><br />
+									<p>Predicting default probability using machine learning, identifying key features that influence risk.</p>
+									<h5 style="text-align: left; margin-left: 0;">Actionable Insights:</h5><br />
+									<p>Recommending strategies to optimize lending, mitigate risk, and better serve borrowers.</p>
+								</blockquote>
 
-								    <h4 style="text-align: left; margin-left: 0;">Key Steps in the Project:</h4><br />
+
+								<h4 style="text-align: left; margin-left: 0;">Why It Matters:</h4>
+								<blockquote style="text-align: left; margin-left: 0;">With growing volumes of peer-to-peer and online lending, understanding the risk landscape is crucial. This project aims to translate complex data into clear, actionable insights, helping financial institutions make smarter, data-driven lending decisions.</blockquote>
+
+								 <h4 style="text-align: left; margin-left: 0;">Tech Stack & Tools (Planned):</h4>
+
+								   <blockquote style="text-align: left; margin-left: 0;">
+									<h5 style="text-align: left; margin-left: 0;">Data Analysis:</h5><br />
+                                    <p>Python (Pyspark, Pandas, NumPy, Matplotlib, Seaborn, Plotly)</p>
+                                   	<h5 style="text-align: left; margin-left: 0;">Data Storage & Querying:</h5><br />
+									<p>Google BigQuery</p>
+									<h5 style="text-align: left; margin-left: 0;">Big Data & Cloud Computing:</h5><br />
+									<p>Databricks for large-scale data processing</p>
+									<h5 style="text-align: left; margin-left: 0;">Machine Learning:</h5><br />
+									<p>Scikit-learn, XGBoost</p>
+									<h5 style="text-align: left; margin-left: 0;">Portfolio Presentation:</h5><br />
+									<p>Jupyter Notebook + interactive visualizations</p>
+									</blockquote>
+									
+									<h4 style="text-align: left; margin-left: 0;">Sneak Peek at Insights (Coming Soon):</h4>
 									<blockquote style="text-align: left; margin-left: 0;">
-									<h5 style="text-align: left; margin-left: 0;">1. Data Processing</h5><p></p>
-													
-                                    <p>Merging customer, product, and transaction tables to create a unified dataset.</p>
-									<p>Extracting relevant features from dictionary-type metadata (product_metadata, event_metadata) for analysis.</p>
-									<p>Handling missing values, ensured proper data types for categorical and datetime fields.</p>
-									<p>Creating derived features such as recency, frequency, and monetary values for each customer.</p>
-                                </blockquote>
+										<p>How loan grade and interest rates impact default risk.</p>
+										<p>Key borrower characteristics that correlate with repayment success.</p>
+										<p>Regional and temporal patterns in lending and defaults.</p>
 
-								<h5 style="text-align: left; margin-left: 0;">2. Exploratory Data Analysis (EDA) </h5><br />
-								<blockquote style="text-align: left; margin-left: 0;">
-								<h6 style="text-align: left; margin-left: 0;">2.1 Customer Insights: </h6><p></p>
-									<p>Gender distribution, geographical spread, and device usage trends.</p>
-									<p>Customer acquisition over time and loyalty patterns.</p>
-								<h6 style="text-align: left; margin-left: 0;">2.2 Transaction Insights: </h6><p></p>
-									<p>Daily orders and revenue trends.</p>
-									<p>Payment methods, promotions, and shipment insights.</p>
-								<h6 style="text-align: left; margin-left: 0;">2.3 Product Insights: </h6><p></p>
-									<p>Top-selling products and categories.</p>
-									<p>Revenue and order distribution by master category, subcategory, and article type.</p>
-								<h6 style="text-align: left; margin-left: 0;">2.4 Clickstream Insights: </h6><p></p>
-									<p>Session duration, number of events, and traffic source analysis.</p>
+									</blockquote>
 
-							</blockquote>
 
-							<h5 style="text-align: left; margin-left: 0;">3. Deep Analysis & Metrics </h5><br />
-								<blockquote style="text-align: left; margin-left: 0;">
-								<h6 style="text-align: left; margin-left: 0;">3.1 RFM Analysis (Recency, Frequency, Monetary): </h6><p></p>
-									<p>Segment customers based on recency of purchase, number of transactions, and total spending.</p>
-									<p>Identify loyal, at-risk, and new customers for targeted marketing.</p>
-								<h6 style="text-align: left; margin-left: 0;">3.2 Top Products & Categories: </h6><p></p>
-									<p>Ranking products and categories by sales and order count.</p>
-									<p>Seasonal trends and color/popularity patterns.</p>
-								<h6 style="text-align: left; margin-left: 0;">3.3 Customer Behavior & Engagement: </h6><p></p>
-									<p>Clickstream analysis for conversion funnel insights.</p>
-									<p>Device type and traffic source impact on purchase behavior.</p>
-								<h6 style="text-align: left; margin-left: 0;">3.4 Business Metrics: </h6><p></p>
-									<p>Total revenue, average order value, repeat purchase rate.</p>
-									<p>Insights into high-performing product lines and underperforming segments.</p>
-
-							</blockquote>
-
-							<h5 style="text-align: left; margin-left: 0;">4. Dashboarding Ideas </h5><br />
-								<blockquote style="text-align: left; margin-left: 0;">
-								<h6 style="text-align: left; margin-left: 0;">Key dashboards include: </h6><p>
-									<p>Sales Dashboard: Revenue trends, top products, category performance, geographic distribution.</p>
-									<p>Customer Dashboard: RFM segments, loyalty metrics, demographic insights.</p>
-									<p>Product Dashboard: Product sales ranking, seasonal trends, subcategory performance.</p>
-									<p>Clickstream Dashboard: Session analysis, funnel visualization, engagement metrics.</p>
 								</blockquote>
 
-									<h5 style="text-align: left; margin-left: 0;">5. Key Takeaways </h5><br />
-								<blockquote style="text-align: left; margin-left: 0;">
+	
+							</header>
+
+						</div>
 								
-									<p>Identifying High-performing products and categories, to optimize inventory and marketing.</p>
-									<p>RFM segmentation for highlighting opportunities to retain at-risk customers and encourage repeat purchases.</p>
-									<p>Seasonal and color-based product trends for planning future product launches.</p>
-									<p>Clickstream analysis for getting insights into the customer journey, showing areas to improve app engagement and conversion.</p>
+					</section>
+
+					<section class="spotlight">
+							<div class="image"><img src="images/Customer.jpg" alt="" /></div><div class="content">
+								<h4>E-commerce Customer & Product Insights<br />
+								<!--sed ullamcorper</h2>--></h4>
+								<blockquote>Working on a comprehensive E-commerce Project that will unify customer behavior, product performance, and transactional analytics. This project will leverage clickstream data, transaction history, and detailed product and customer metadata to provide actionable insights. Key initiatives include customer segmentation using RFM analysis, cohort and retention studies, basket analysis for product affinities, predictive modeling for churn and conversion.</blockquote>
+							<ul class="actions special">
+								<li style="margin-right: 620px;"><a href="" class="button primary disabled">Digging into Data</a></li>
+							</ul>
+							</div>
+						</section>
+
+                        
+					 <!-- One -->
+					<section id="one" class="wrapper style1 special">
+					
+						<div style="text-align:left;" , class="inner">
+							<header class="major">
+
+                               								
+                                <h4 style="text-align: left; margin-left: 0;">Why It Matters:</h4>
+								<blockquote style="text-align: left; margin-left: 0;">Understanding customer behavior and product performance is essential for optimizing sales, marketing strategies, and user experience. By extracting actionable insights from multiple data sources, this project will enable:<br /><br />
+									<h5 style="text-align: left; margin-left: 0;">Targeted marketing campaigns</h5>
+								 	<p>Based on customer segments and predicted lifetime value.</p>
+									<h5 style="text-align: left; margin-left: 0;">Improved product recommendations</h5>
+									<p>And personalized experiences, increasing conversion rates.</p>
+									<h5 style="text-align: left; margin-left: 0;">Operational efficiency</h5>
+									<p>By identifying high-performing products and sales trends.</p>
+									<h5 style="text-align: left; margin-left: 0;">Strategic decision-making</h5>
+									<p>With dashboards and predictive analytics to anticipate churn, forecast revenue, and optimize inventory.</p>
+                                    
+									</blockquote>
+									
+									<h4 style="text-align: left; margin-left: 0;">Tech Stack & Tools:</h4>
+									<blockquote style="text-align: left; margin-left: 0;">
+										<h5 style="text-align: left; margin-left: 0;">Data Engineering & Storage:</h5>
+										<p>Python (pandas, numpy), SQL, BigQuery / Databricks for scalable data processing.</p>
+										<h5 style="text-align: left; margin-left: 0;">Data Analysis & Visualization:</h5>
+										<p>Matplotlib, Plotly, Seaborn, Jupyter Notebooks, Power BI or Data Studio dashboards.</p>
+										<h5 style="text-align: left; margin-left: 0;">Feature Engineering & Machine Learning:</h5>
+										<p>scikit-learn, lifetimes (CLTV), mlxtend (basket analysis), Random Forests, Gradient Boosting, and cohort analysis frameworks.</p>
+										<h5 style="text-align: left; margin-left: 0;">Dashboard & Delivery:</h5>
+										<p>Streamlit for interactive dashboards, with optional integration into Databricks for collaborative exploration.</p>
+
+										</blockquote>
+
+										<h4 style="text-align: left; margin-left: 0;">Sneak Peek at Insights (Coming soon):</h4>
+									<blockquote style="text-align: left; margin-left: 0;">
+										<h5 style="text-align: left; margin-left: 0;">Customer Segments:</h5>
+										<p>Identification of high-value customers with frequent purchases and high average order values, along with at-risk churn segments.</p>
+										<h5 style="text-align: left; margin-left: 0;">Cohort & Retention Patterns:</h5>
+										<p>Insight into how customer retention evolves over time and which cohorts are most engaged.</p>
+										<h5 style="text-align: left; margin-left: 0;">Top Products & Categories:</h5>
+										<p>Early analysis reveals which products and categories drive the most revenue and repeat purchases.</p>
+										<h5 style="text-align: left; margin-left: 0;">Conversion & Funnel Metrics:</h5>
+										<p>Analysis of session activity and device usage to pinpoint conversion bottlenecks and optimize UX.</p>
+										<h5 style="text-align: left; margin-left: 0;">Product Affinities:</h5>
+										<p>Initial basket analysis highlights frequently bought-together items, setting the stage for smarter cross-selling strategies.</p>
+										
+				
+
+
 								</blockquote>
+								<blockquote style="text-align: left; margin-left: 0;">This project combines deep data analysis with predictive modeling to transform raw e-commerce activity into strategic insights, enabling smarter decisions and measurable business impact.</blockquote>
 
-									<h5 style="text-align: left; margin-left: 0;">6. Project Highlights </h5><br />
-								<blockquote style="text-align: left; margin-left: 0;">
+	
+							</header>
+
+						</div>
 								
-									<p>Application of advanced data preprocessing and feature extraction from nested metadata.</p>
-									<p>Conducting comprehensive EDA and deriving actionable business insights.</p>
-									<p>Creating RFM-based customer segmentation for strategic marketing decisions.</p>
-									<p>Demonstrating full end-to-end analytics workflow from raw data to insights.</p>
-								</blockquote>
-
-								</header>
-
-								</div>
-								
-								</section>
+					</section>
                      
+
+
+
+	      
 				
                   
 		
