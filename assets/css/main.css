@@ -4057,3 +4057,26 @@ input, select, textarea {
   align-items: center;     /* aligns vertically if needed */
   margin-top: 20px;         /* optional spacing from top */
 }
+
+/* Hide submenus initially */
+.submenu {
+  display: none;
+  margin-left: 15px;  /* indent */
+  list-style: none;
+}
+
+/* Style submenu links */
+.submenu li a {
+  font-size: 0.9em;
+  padding: 5px 0;
+  display: block;
+}
+
+/* Optional: rotate arrow when expanded */
+.submenu-toggle.active::after {
+  content: " ▲";
+}
+.submenu-toggle::after {
+  content: " ▼";
+  font-size: 0.8em;
+}
