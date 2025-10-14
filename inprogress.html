@@ -226,12 +226,12 @@
 							</div>
 						</section>
 
-						 <section class="spotlight">
+						 <!--<section class="spotlight">
 							<div class="image"><img src="images/docker.png" alt="" /></div><div class="content">
-								<h4>Real-Time OpenWeather Data Platform<br />
-								<!--sed ullamcorper</h2>--></h4>
+								<h4>Modern Containerized Data Pipeline for Automated SQL Server & SSAS Processing<br />
+								sed ullamcorper</h2></h4>
 
-                                <h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Data Source:</h6>
+                               <h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Data Source:</h6>
 
                                 <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
                                 <p style="font-size: 14px; margin: 0px 0;"><a href="https://www.kaggle.com/datasets/utkalk/large-retail-data-set-for-eda" target="_blank">Retail Transactional Data</a></p>
@@ -240,45 +240,80 @@
 								<h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Project Idea:</h6>
 
                                 <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
-                                <p style="font-size: 14px; margin: 0px 0;">Modular Data Engineering project pipeline contanerized using Docker and Kubernetes</p>
-                                <p style="font-size: 14px; margin: 0px 0;">Ingest real-time weather data from an external API</p>
-                                <p style="font-size: 14px; margin: 0px 0;">Modelling, Processing & Transformation using dbt</p>
-								<p style="font-size: 14px; margin: 0px 0;">Orchestrate workflows using Airflow, and run everything on a containerized Kubernetes cluster.</p>
-                                <p style="font-size: 14px; margin: 0px 0;">Feed processed data into an analytical dashboard (Power BI)</p>
-                                                   
+                                <p style="font-size: 14px; margin: 0px 0;">Build a containerized, automated ETL pipeline.</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Ingest raw data from external sources.</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Transform it into a Star Schema in SQL Server using dbt.</p>
+								<p style="font-size: 14px; margin: 0px 0;">Process an SSAS Tabular Model to refresh semantic layers and Power BI reports.</p>
+								<p style="font-size: 14px; margin: 0px 0;">Orchestration by Apache Airflow running inside Docker containers.</p>
+								<p style="font-size: 14px; margin: 0px 0;">Kubernetes managing daily ETL schedules at scale.</p>
+                                                                                   
                                 </blockquote>
-								<h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Tech Stack:</h6>
+								<h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Key Objectives:</h6>
 
                                 <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
-                                <p style="font-size: 14px; margin: 0px 0;">Ingestion: Python (requests, pandas) in Docker</p>
-                                <p style="font-size: 14px; margin: 0px 0;">Storage: Postgres (containerized)</p>
-                                <p style="font-size: 14px; margin: 0px 0;">Transformation: dbt (with Postgres adapter)</p>
-                                <p style="font-size: 14px; margin: 0px 0;">Orchestration: Apache Airflow (Docker → K8s)</p>
-								<p style="font-size: 14px; margin: 0px 0;">Deployment: Kubernetes (local: kind/minikube)</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Automate ingestion and transformation workflows end-to-end.</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Modernize legacy ETL processes using containerization & orchestration.</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Seamlessly integrate dbt transformations with SQL Server.</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Trigger SSAS model refreshes using TMSL / PowerShell from Airflow</p>
+								<p style="font-size: 14px; margin: 0px 0;">Showcase scalability using Kubernetes</p>
 								<p style="font-size: 14px; margin: 0px 0;">Visualization: Power BI</p>
+                                                   
+                                </blockquote>
+
+								<h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Tools:</h6>
+
+                                <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
+                                <p style="font-size: 14px; margin: 0px 0;">Ingestion - Python (Requests / Pandas) Fetch raw data from APIs & CSV.</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Transformation - dbt, SQL-based transformations → Star Schema.</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Warehouse - SQL Server, Centralized DW storage.</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Semantic Layer - SSAS Tabular, Data model for reporting.</p>
+								<p style="font-size: 14px; margin: 0px 0;">Reporting - Power BI (Live Connection), Dashboarding & visualization.</p>
+								<p style="font-size: 14px; margin: 0px 0;">Orchestration - Apache Airflow, Manage DAGs for ingestion, dbt runs, and SSAS refresh.</p>
+								<p style="font-size: 14px; margin: 0px 0;">Containerization - Docker, Containerize each pipeline component.</p>
+								<p style="font-size: 14px; margin: 0px 0;">Orchestration at Scale - Kubernetes (K8s), Schedule and scale containers for daily runs.</p>
+								<p style="font-size: 14px; margin: 0px 0;">Version Control - GitHub, Store dbt models, Airflow DAGs, and code.</p>
+								<p style="font-size: 14px; margin: 0px 0;">CI/CD - GitHub Actions, Automate build and deploy of containers.</p>
+								<p style="font-size: 14px; margin: 0px 0;">Automation - PowerShell / TMSL, Trigger SSAS processing.</p>
                                                    
                                 </blockquote>
 
 								<h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Project Pipeline:</h6>
 
                                 <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
-                                <p style="font-size: 14px; margin: 0px 0;">1. API Ingestion (Dockerized Python microservice)</p>
-                                <p style="font-size: 14px; margin: 0px 0;">2. dbt Transformations</p>
-                                <p style="font-size: 14px; margin: 0px 0;">3. Airflow Orchestration</p>
-                                <p style="font-size: 14px; margin: 0px 0;">4. Kubernetes Deployment</p>
-								<p style="font-size: 14px; margin: 0px 0;">5. Visualization Layer (Power BI)</p>
+                                <p style="font-size: 14px; margin: 0px 0;">1: Python Ingestion (Dockerized) [Skills: Python, APIs, Docker, Airflow DAG design]</p>
+                                <p style="font-size: 14px; margin: 0px 0;">2: dbt Transformation [Skills: dbt, SQL, Data Modeling (Star Schema), Containerization, Git]</p>
+                                <p style="font-size: 14px; margin: 0px 0;">3: SSAS Model Processing [Skills: PowerShell, TMSL, SSAS Tabular, Airflow operator chaining]</p>
+                                <p style="font-size: 14px; margin: 0px 0;">4: Reporting [Skills: Power BI, SSAS Integration, BI Design]</p>
+								<p style="font-size: 14px; margin: 0px 0;">5: Container Orchestration with Kubernetes [Skills: Kubernetes, YAML configs, cloud-native orchestration</p>
 								                                                   
                                 </blockquote>
 
-									</div>
-						</section>
+								<h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Key Skills:</h6>
 
+                                <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
+                                <p style="font-size: 14px; margin: 0px 0;">1: Modern ETL/ELT architecture (Python + dbt + Airflow)</p>
+                                <p style="font-size: 14px; margin: 0px 0;">2: Containerization with Docker</p>
+                                <p style="font-size: 14px; margin: 0px 0;">3: Cloud-native orchestration using Kubernetes</p>
+                                <p style="font-size: 14px; margin: 0px 0;">4: Hybrid integration of open-source stack with Microsoft BI (SQL Server + SSAS)</p>
+								<p style="font-size: 14px; margin: 0px 0;">5: Data modeling (Star Schema)</p>
+								<p style="font-size: 14px; margin: 0px 0;">6: Automation & CI/CD for data pipelines</p>
+								<p style="font-size: 14px; margin: 0px 0;">7: BI Semantic modeling & reporting using SSAS + Power BI</p>
+								<p style="font-size: 14px; margin: 0px 0;">8: End-to-End Orchestration with DAG design & script execution</p>
+								                                                   
+                                </blockquote>
 
+									<h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Showcases:</h6>
+
+                                <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
+                                <p style="font-size: 14px; margin: 0px 0;">1: Combines modern data engineering patterns (dbt, Airflow, containers) with enterprise BI tooling (SSAS, SQL Server, Power BI).</p>
+                                <p style="font-size: 14px; margin: 0px 0;">2: Reflects how large organizations modernize their BI stacks without replacing everything.</p>
+                                <p style="font-size: 14px; margin: 0px 0;">3: Demonstrates skills across multiple layers: ingestion, transformation, orchestration, semantic modeling, and reporting.</p>
                                 
+                                </blockquote>
 
-                        						
-			
-									
+								</div>
+						</section>-->
+		
 		<!-- Footer -->
 					<footer id="footer">
 					<div class="col-6 col-12-medium">
