@@ -2714,12 +2714,12 @@ input, select, textarea {
 		}
 
 			.spotlight .image img {
-				border-radius: 0;
+				border-radius: 25;
 				width: 100%;
 			}
 
 		.spotlight .content {
-			padding: 2em 4em 0.1em 4em ;
+			padding: 2em 0.1em 0.1em 2em ;
 			-moz-order: 2;
 			-webkit-order: 2;
 			-ms-order: 2;
