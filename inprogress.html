@@ -105,10 +105,10 @@
 		
 				
 				
-				<section class="spotlight">
+				<!--<section class="spotlight">
 							<div class="image"><img src="images/BigQuery-to-Databricks.png" alt="" /></div><div class="content">
 								<h4>Financial Transactions Data Lakehouse Pipeline<br />
-								<!--sed ullamcorper</h2>--></h4>
+								sed ullamcorper</h2></h4>
 
                                <h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Data Source:</h6>
 
@@ -141,7 +141,7 @@
 								<li style="margin-right: 620px;"><a href="" class="button primary disabled">Shaping Up</a></li>
 							</ul>
 							</div>
-						</section>
+						</section>-->
 
 
                         <section class="spotlight">
@@ -158,10 +158,10 @@
 								<h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Project Idea:</h6>
 
                                 <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
-                                <p style="font-size: 14px; margin: 0px 0;">Stage raw data into Delta tables (Bronze) from Google Big Query.</p>
-                                <p style="font-size: 14px; margin: 0px 0;">Use dbt to build staging, intermediate, and mart models in Databricks.</p>
-                                <p style="font-size: 14px; margin: 0px 0;">Implement tests, documentation, and a simple CI/CD workflow.</p>
-                                <p style="font-size: 14px; margin: 0px 0;">Build a BI dashboard (Power BI) on top of dbt models.</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Ingesting data from Google BigQuery into Databricks Delta tables (Bronze layer) as the single source of truth. This is the foundation for all downstream transformations.</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Use dbt to create staging, intermediate, and mart models inside Databricks, implement SQL-based transformations and dimensional modeling (star schema), Leverage dbt tests, docs, and snapshots to ensure data quality and historical tracking.</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Apache Airflow will be the orchestration layer to automate the entire pipeline, Daily DAG runs to schedule: Data extraction from BigQuery → Bronze Delta tables, Trigger dbt models for transformation, Run automated data quality checks, Refresh Power BI datasets using API calls.</p>
+                                <p style="font-size: 14px; margin: 0px 0;">CI/CD & Version Control - All dbt code, Airflow DAGs, and Power BI dataset configs stored in GitHub, All dbt code, Airflow DAGs, and Power BI dataset configs stored in GitHub.</p>
                            
                                         
                                                              
@@ -169,13 +169,23 @@
              
                                 <h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Skills:</h6>  
                                 <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
-                                <p style="font-size: 14px; margin: 0px 0;"> dbt, Databricks SQL, Dimensional Modeling, Version Control, Power BI</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Data Transformation & Modeling: dbt, Databricks SQL, Dimensional Modeling</p>
+								<p style="font-size: 14px; margin: 0px 0;">Workflow Orchestration: Apache Airflow DAG design, scheduling, monitoring</p>
+								<p style="font-size: 14px; margin: 0px 0;">Automation & CI/CD: GitHub Actions, dbt testing, automated deployments</p>
+								<p style="font-size: 14px; margin: 0px 0;">Visualization: Power BI for business intelligence and reporting</p>
+								<p style="font-size: 14px; margin: 0px 0;">Cloud Data Platforms: Google BigQuery, Databricks</p>
                                                                                             
                                 </blockquote>                              
                                 
                                 <h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Showcases:</h6>
                                 <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
-                                <p style="font-size: 14px; margin: 0px 0;"> Analytics engineering, transformation logic, modular SQL</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Modern end-to-end ELT pipeline with orchestration</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Modular, testable SQL transformations using dbt</p>
+								<p style="font-size: 14px; margin: 0px 0;">Data quality enforcement through dbt tests and Airflow alerts</p>
+								<p style="font-size: 14px; margin: 0px 0;">Automated data refreshes & dashboard updates on schedule</p>
+								<p style="font-size: 14px; margin: 0px 0;">Version-controlled workflows with continuous integration</p>
+								<p style="font-size: 14px; margin: 0px 0;">Demonstrates cross-tool integration: BigQuery → Databricks → dbt → Airflow → Power BI</p>
+								<p style="font-size: 14px; margin: 0px 0;">Highlights scalability (daily runs, environment separation, modular design)</p>
                                                                                             
                                 </blockquote>         
                    
@@ -228,7 +238,7 @@
 
 						 <section class="spotlight">
 							<div class="image"><img src="images/docker.png" alt="" /></div><div class="content">
-								<h4>Containerized Data Pipeline for Automated SQL Server & SSAS Processing<br />
+								<h4>Declarative Data Engineering in the Cloud with BigQuery, dbt, and Airflow<br />
 								
 
                                <!--<h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Data Source:</h6>
@@ -240,11 +250,11 @@
 								<h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Project Idea:</h6>
 
                                 <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
-                                <p style="font-size: 14px; margin: 0px 0;">Build a modern data pipeline to ingest and transform large SAP datasets (stored in BigQuery) into a SQL Server DW using containerized ETL workflows, 
-                                Orchestrate daily end-to-end pipelines with Airflow running on Kubernetes, enabling scalable, automated ingestion, transformation, and semantic model processing,
-								Integrate dbt for modular transformations and SSAS Tabular for semantic modeling and reporting in Power BI,
-								Automate SSAS partition processing using PowerShell / TMSL scripts, ensuring Power BI reports stay in sync with DW data, 
-								Apply layered data architecture (staging → ODS → DW star schema) for clean modeling and governance.</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Data Landing (Staging in BigQuery)</p>
+								<p style="font-size: 14px; margin: 0px 0;">Modular Transformations with dbt (in BigQuery)</p>
+								<p style="font-size: 14px; margin: 0px 0;">Orchestration with Airflow on Kubernetes</p>
+								<p style="font-size: 14px; margin: 0px 0;">Power BI DirectQuery / Direct Lake</p>
+								<p style="font-size: 14px; margin: 0px 0;">CI/CD & Observability</p>
                                                                                    
                                 </blockquote>
 								<!--<h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Key Objectives:</h6>
@@ -259,16 +269,16 @@
                                                    
                                 </blockquote>-->
 
-								<h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Tools:</h6>
+								<h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Tech Stack:</h6>
 
                                 <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
-                                <p style="font-size: 14px; margin: 0px 0;">1. ETL / Transformation: Python for ingestion from BigQuery → SQL Server, dbt (SQL Server adapter) for data modeling & transformations.</p>
-                                <p style="font-size: 14px; margin: 0px 0;">2. Data Warehouse: Microsoft SQL Server</p>
-                                <p style="font-size: 14px; margin: 0px 0;">3. Orchestration: Apache Airflow (deployed on Kubernetes), Docker for containerizing ingestion, dbt, and SSAS processing jobs.</p>
-                                <p style="font-size: 14px; margin: 0px 0;">4. Semantic Layer - SQL Server Analysis Services (SSAS) Tabular models.</p>
-								<p style="font-size: 14px; margin: 0px 0;">5. Automation & Deployment: PowerShell / TMSL, Kubernetes CronJobs, CI/CD pipelines.</p>
-								<p style="font-size: 14px; margin: 0px 0;">6. Visualization: Power BI (Live connection to SSAS)</p>
-								<p style="font-size: 14px; margin: 0px 0;">7. Monitoring: Airflow UI, K8s logs, dbt test results</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Data platform: Google BigQuery</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Transformation: dbt-bigquery</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Orchestration: Airflow on Kubernetes (or Composer)</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Landing: GCS → BigQuery Staging</p>
+								<p style="font-size: 14px; margin: 0px 0;">BI Layer: Power BI (DirectQuery or Direct Lake)</p>
+								<p style="font-size: 14px; margin: 0px 0;">CI/CD: GitHub Actions, dbt Cloud optional</p>
+								<p style="font-size: 14px; margin: 0px 0;">Monitoring: Airflow UI, dbt docs, BigQuery usage dashboards</p>
 						
                                                    
                                 </blockquote>
@@ -301,13 +311,12 @@
 								<h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Showcases:</h6>
 
                                 <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
-                                <p style="font-size: 14px; margin: 0px 0;">Designing a multi-layer ETL pipeline with clear staging, ODS, and DW layers,
-								Deploying modular ETL components in Docker and orchestrating at scale with Kubernetes,
-								Bridging BigQuery (cloud) with SQL Server (on-prem / hybrid) as a data warehouse,
-								Applying dbt incremental models, partitioning, and schema management,
-								Automating SSAS processing and ETL runs using Airflow DAGs, PowerShell scripts, and Git-based deployments,
-								Implementing partition-based processing in SSAS to handle large fact tables efficiently,
-								</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Modern Lakehouse-style architecture fully in BigQuery.</p>
+								<p style="font-size: 14px; margin: 0px 0;">Containerized dbt transformations orchestrated by Airflow.</p>
+								<p style="font-size: 14px; margin: 0px 0;">No separate warehouse or semantic engine required.</p>
+								<p style="font-size: 14px; margin: 0px 0;">Power BI connected live to cloud data for near real-time analytics.</p>
+								<p style="font-size: 14px; margin: 0px 0;">dbt lineage graph, tests, and docs as governance layer.</p>
+								<p style="font-size: 14px; margin: 0px 0;">End-to-end automated daily pipeline with CI/CD.</p>
 									
                                 
                                 </blockquote>
