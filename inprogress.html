@@ -65,6 +65,67 @@
 		        
 				<!-- Two -->
 				
+
+				<section class="spotlight">
+							<div class="image"><img src="images/gcp.jpg" alt="" /></div><div class="content">
+								<h4>Click → Convert: Customer Behavior and Offer Optimization Analytics on GCP<br />
+								<!--sed ullamcorper</h2>--></h4>
+
+                               <h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Project Idea:</h6>
+
+                                <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
+                                <p style="font-size: 14px; margin: 0px 0;">1. Build a cloud-native data analytics pipeline to analyze customer clickstream and transaction data from Amex’s digital platform.</p>
+								<p style="font-size: 14px; margin: 0px 0;">2. Use GCP services to clean, process, and model behavioral data at scale — uncovering insights into customer activity, spending, and offer engagement.</p>
+								<p style="font-size: 14px; margin: 0px 0;">3. Deliver a centralized analytical dataset in BigQuery that powers interactive Power BI dashboards, enabling data-driven marketing and personalization.</p>
+								<p style="font-size: 14px; margin: 0px 0;">4. Ultimately, help Amex understand what drives offer clicks, campaign success, and customer loyalty across digital touchpoints.</p>
+								                                                          
+                                </blockquote>
+             
+                                <h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Tools:</h6>  
+								<blockquote style="font-size: 14px; text-align: left; margin-left: 0; margin: 0px 0;"> ☁️ Google Cloud Platform</blockquote>
+
+                                <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
+                                <p style="font-size: 14px; margin: 0px 0;">1. Google Cloud Storage (GCS): Store raw clickstream, offer, and campaign data.</p>
+								<p style="font-size: 14px; margin: 0px 0;">2. Dataflow (Job Builder): Perform ETL—data cleaning, feature extraction, and loading to BigQuery.</p>
+								<p style="font-size: 14px; margin: 0px 0;">3. Dataform / Scheduled Queries: Automate data transformations and model refreshes.</p>
+																								                                                                                            
+                                </blockquote>          
+								
+								<blockquote style="font-size: 14px; text-align: left; margin-left: 0; margin: 0px 0;"> 🧠 Data Processing & Modeling</blockquote>
+
+                                <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
+                                <p style="font-size: 14px; margin: 0px 0;">1. Apache Beam (Dataflow): For scalable transformations and feature engineering.</p>
+								<p style="font-size: 14px; margin: 0px 0;">2. BigQuery SQL: For building analytical datasets and business logic models.</p>
+								<p style="font-size: 14px; margin: 0px 0;">3. BigQuery: Data warehousing, SQL-based modeling, and analytical transformations.</p>
+								<p style="font-size: 14px; margin: 0px 0;">4. Cloud Scheduler: Automate Dataflow jobs and query refreshes.</p>
+																                                                                                            
+                                </blockquote>            
+								<blockquote style="font-size: 14px; text-align: left; margin-left: 0; margin: 0px 0;"> 📊 Visualization & Reporting</blockquote>
+
+                                <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
+                                <p style="font-size: 14px; margin: 0px 0;">1. Power BI: Build interactive dashboards and analytical reports.</p>
+								<p style="font-size: 14px; margin: 0px 0;">2. BigQuery Connector for Power BI: Enable real-time data querying via DirectQuery.</p>
+																								                                                                                            
+                                </blockquote>      
+								
+								<h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Showcases & Deliverables:</h6>
+
+                                <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
+                                <p style="font-size: 14px; margin: 0px 0;">1. End-to-End Cloud Data Pipeline: GCS → Dataflow → BigQuery → Power BI.</p>
+								<p style="font-size: 14px; margin: 0px 0;">2. Analytical Dataset: Unified table combining clickstream, spend, and offer performance metrics.</p>
+								<p style="font-size: 14px; margin: 0px 0;">3. Automated Scheduling: Daily ETL refresh using Cloud Scheduler + BigQuery.</p>
+								<p style="font-size: 14px; margin: 0px 0;">4. Scalable & Reproducible Architecture: Easily extendable for new campaigns or datasets.</p>
+								                                                          
+                                </blockquote>
+                                
+								                               
+                                <ul class="actions special">
+								<li style="margin-right: 620px;"><a href="" class="button primary disabled">Shaping Up</a></li>
+							</ul>
+							</div>
+						</section>
+
+
 						<section class="spotlight">
 							<div class="image"><img src="images/azure.jpeg" alt="" /></div><div class="content">
 								<h4>Secure Data Modernization Pipeline on Azure<br />
@@ -73,32 +134,33 @@
                                <h6 style="text-align: left; margin-left: 0; margin: 0px 0;">High Level Architecture:</h6>
 
                                 <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
-                                <p style="font-size: 14px; margin: 0px 0;">Source SQL Server → Azure Databricks (ETL) reads via JDBC (private network / VPN / Private Endpoint) → writes canonical data as Delta layers (Bronze / Silver / Gold) into Azure Data Lake Storage Gen2 (ADLS Gen2) → Azure Synapse (serverless SQL pool for logical/interactive querying, and/or dedicated SQL pool for high-performance DW) exposes relational views / external tables → Power BI connects (DirectQuery or Import) for reporting and dashboards. Secrets live in Azure Key Vault and Databricks reads them via an Azure Key Vault–backed secret scope; identities and user auth are handled by Azure Active Directory (Azure AD).</p>
+                                <p style="font-size: 14px; margin: 0px 0;">1. On-prem SQL Server (source) → Azure Data Factory triggers and orchestrates data movement and Databricks notebooks (ETL).</p>
+								<p style="font-size: 14px; margin: 0px 0;">2. Databricks reads from SQL Server (JDBC) and writes Delta tables into ADLS Gen2 using a Bronze→Silver→Gold lakehouse pattern.</p>
+								<p style="font-size: 14px; margin: 0px 0;">3. Azure Synapse (serverless SQL pool and/or dedicated SQL pool) exposes curated datasets as external tables/views for analytics.</p>
+								<p style="font-size: 14px; margin: 0px 0;">4. Power BI connects to Synapse (DirectQuery or Import) for dashboards.</p>
+								<p style="font-size: 14px; margin: 0px 0;">5. Secrets (JDBC credentials, storage keys, service principal secrets) live in Azure Key Vault; Azure Active Directory manages user/service identities and RBAC.</p>
+								<p style="font-size: 14px; margin: 0px 0;">6. ADF handles scheduling, monitoring, and branch-able pipeline orchestration.</p>
+								<p style="font-size: 14px; margin: 0px 0;">7. Observability via Log Analytics + Azure Monitor. Governance via Key Vault, resource tagging.</p>
+
                                                           
                                 </blockquote>
              
                                 <h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Tools:</h6>  
                                 <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
-                                <p style="font-size: 14px; margin: 0px 0;">1. Resource Group, Virtual Network (VNet) with subnets (for private connectivity).</p>
-								<p style="font-size: 14px; margin: 0px 0;">2. SQL Server (on-prem/VM/Azure SQL) — reachable over private network or via secure endpoint.</p>
-								<p style="font-size: 14px; margin: 0px 0;">3. Storage account (ADLS Gen2) with hierarchical namespace enabled (containers for bronze/silver/gold).</p>
-								<p style="font-size: 14px; margin: 0px 0;">4. Azure Key Vault(s) for secrets (separate per env: dev/prod).</p>
-								<p style="font-size: 14px; margin: 0px 0;">5. Azure Databricks workspace (VNet injection / Private Link recommended).</p>
-								<p style="font-size: 14px; margin: 0px 0;">6. Azure Synapse workspace (serverless SQL pool; optional dedicated SQL pool).</p>
-								<p style="font-size: 14px; margin: 0px 0;">7. Power BI tenant / app registration (service principal if automating embedding or refresh).</p>
-								<p style="font-size: 14px; margin: 0px 0;">8. AObservability: Log Analytics workspace / Azure Monitor / diagnostic settings.</p>
-
-                                                                                            
+                                <p style="font-size: 14px; margin: 0px 0;">1. Resource Group(s): rg-<proj>-env (per env: dev/test/prod)</p>
+								<p style="font-size: 14px; margin: 0px 0;">2. VNet with subnets for Databricks / Synapse.</p>
+								<p style="font-size: 14px; margin: 0px 0;">3. Azure SQL Server (or on-prem SQL accessible via VPN/ExpressRoute/Private Link)</p>
+								<p style="font-size: 14px; margin: 0px 0;">4. Storage Account (ADLS Gen2) with containers: /bronze, /silver, /gold.</p>
+								<p style="font-size: 14px; margin: 0px 0;">5. Azure Databricks workspace (prefer VNet injection / Private Link)</p>
+								<p style="font-size: 14px; margin: 0px 0;">6. Azure Synapse workspace (serverless SQL pool; optionally dedicated SQL pool)</p>
+								<p style="font-size: 14px; margin: 0px 0;">7. Azure Data Factory (ADF) instance</p>
+								<p style="font-size: 14px; margin: 0px 0;">8. Azure Key Vault(s) (separate per env)</p>
+								<p style="font-size: 14px; margin: 0px 0;">9. Managed Identities / Service Principals (for Databricks, Synapse, ADF, Power BI)</p>
+								<p style="font-size: 14px; margin: 0px 0;">10. Log Analytics workspace + Azure Monitor + Alerts</p>
+								                                                                                            
                                 </blockquote>                              
                                 
-								<h6 style="text-align: left; margin-left: 0; margin: 0px 0;">Showcases:</h6>  
-                                <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
-                                <p style="font-size: 14px; margin: 0px 0;">1. Delta Lake on ADLS Gen2 gives ACID, time travel, and efficient upserts (ideal for CDC/slowly changing tables).</p>
-								<p style="font-size: 14px; margin: 0px 0;">2. Synapse serverless provides a T-SQL logical layer over files (no copy), while dedicated pools give predictable performance for large analytic workloads.</p>
-								<p style="font-size: 14px; margin: 0px 0;">3. Key Vault + Azure AD minimizes secret sprawl and enables RBAC & rotation best practices.</p>
-							                                                                                            
-                                </blockquote>          
-                                
+								                               
                                 <ul class="actions special">
 								<li style="margin-right: 620px;"><a href="" class="button primary disabled">Shaping Up</a></li>
 							</ul>
