@@ -118,7 +118,7 @@
 								 	<p style="font-size: 16px; margin: 0px 0;">1. Data: Wireshark [pcap] files.</p>
 									<p style="font-size: 16px; margin: 0px 0;">2. Processing: PySpark, Kafka</p>
                                     <p style="font-size: 16px; margin: 0px 0;">3. ML: TensorFlow Autoencoder, Random Forest</p>
-                                    <p style="font-size: 16px; margin: 0px 0;">4. Storage: Hadoop, Elasticsearch</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">4. Storage: Hadoop / GCS / S3</p>
                                     <p style="font-size: 16px; margin: 0px 0;">5. Visualization: Kibana, Grafana</p>
                                     
 									</blockquote>
@@ -216,6 +216,85 @@
 						</div>
 								
 					</section>
+
+					<!-- Two -->
+						<section class="spotlight">
+							<div class="image"><img src="images/google.png" alt="" /></div>
+							<div class="content">
+								<h4>Traffic Congestion Prediction (Realtime Google Maps API Data)<br />
+								<!--sed ullamcorper</h2>--></h4>
+								<h6 style="text-align: left; margin-left: 0;">Objective:</h6>
+                                <blockquote style="text-align: left; margin-left: 0; margin: 0px 0;">
+                                <p style="font-size: 14px; margin: 0px 0;">Predict traffic congestion levels in real-time using live data from Google Maps API combined with weather and event data.</p>
+                                </blockquote><br />
+
+                                <h6 style="text-align: left; margin-left: 0;">Summary Introduction:</h6>
+
+                                <blockquote style="text-align: left; margin-left: 0;">
+								<p style="font-size: 14px; margin: 0px 0;">This Project integrates real-time traffic and weather feeds from Google Maps and OpenWeather APIs to forecast congestion patterns across urban zones. The system uses Kafka for streaming, Hadoop for data storage, and LSTM models in TensorFlow to predict congestion up to 30 minutes ahead. Through an interactive Streamlit dashboard and GraphQL queries, users can visualize dynamic traffic heatmaps and anticipate peak hours for better route planning.</p>
+								</blockquote>
+
+							<ul class="actions special">
+								<li style="margin-right: 720px;">
+									 <a href="javascript:void(0)" class="button primary toggle-btn" data-target="google_maps">Explore</a>
+								</li>
+							</ul>
+							</div>
+						</section>
+
+                        
+					 <!-- One -->
+					<section id="google_maps" class="wrapper style1 special collapsible-section">
+					
+						<div style="text-align:left;" , class="inner">
+							<header class="major">
+								                              								
+                                <h5 style="text-align: left; margin-left: 0;">🧩 Architecture:</h5>
+                                <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
+                                <p style="font-size: 16px; margin: 0px 0;">[Google Maps API + Weather API + Event Feeds]</p>
+                                <p style="font-size: 14px; margin: 0px 0;"> ↓ </p>
+                                <p style="font-size: 16px; margin: 0px 0;">[Kafka Streaming Ingestion]</p>
+                                <p style="font-size: 14px; margin: 0px 0;"> ↓ </p>
+                                <p style="font-size: 16px; margin: 0px 0;">[Data Lake Storage: Hadoop / S3]</p>
+                                <p style="font-size: 14px; margin: 0px 0;"> ↓ </p>
+                                <p style="font-size: 16px; margin: 0px 0;">[Feature Engineering in PySpark]</p>
+                                <p style="font-size: 14px; margin: 0px 0;"> ↓ </p>
+                                <p style="font-size: 16px; margin: 0px 0;">[LSTM / Prophet Time-Series Model]</p>
+                                <p style="font-size: 14px; margin: 0px 0;"> ↓ </p>
+                                <p style="font-size: 16px; margin: 0px 0;">[Realtime API: FastAPI + GraphQL]</p>
+								<p style="font-size: 14px; margin: 0px 0;"> ↓ </p>
+								<p style="font-size: 16px; margin: 0px 0;">[Visualization Dashboard: Streamlit / Power BI]</p>
+                                </blockquote><br />
+                                
+                                <h5 style="text-align: left; margin-left: 0;">🛠️ Tool Stack:</h5>
+								<blockquote style="text-align: left; margin-left: 0;">
+									
+								 	<p style="font-size: 16px; margin: 0px 0;">1. Data: Google Maps API, OpenWeatherMap</p>
+									<p style="font-size: 16px; margin: 0px 0;">2. Streaming: Apache Kafka</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">3. Storage: Hadoop HDFS / S3</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">4. ML: TensorFlow (LSTM), Prophet</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">5. API: GraphQL + FastAPI</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">6. Visualization: Power BI, Streamlit</p>
+                                    
+									</blockquote>
+
+                                    <h5 style="text-align: left; margin-left: 0;">⚙️ Implementation Steps:</h5>
+                                    <blockquote style="text-align: left; margin-left: 0;">
+                                    <p style="font-size: 16px; margin: 0px 0;">1. Pull live traffic data from Google Maps API (lat/lon, travel time, speed).</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">2. Stream into Kafka, store in Hadoop.</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">3. Merge with weather and event data.</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">4. Train LSTM model to predict congestion for next 30 minutes.</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">5. Expose predictions via GraphQL API.</p>
+									<p style="font-size: 16px; margin: 0px 0;">6. Display congestion heatmap in Streamlit.</p>
+                                   
+                                    </blockquote>
+                   
+									</header>
+
+						</div>
+								
+					</section>
+
 
                    <!-- Footer -->
 					<footer id="footer">
