@@ -70,12 +70,12 @@
 								<!--sed ullamcorper</h2>--></h4>
 								<h6 style="text-align: left; margin-left: 0;">Objective:</h6>
                                 <blockquote style="text-align: left; margin-left: 0; margin: 0px 0;">
-                                <p style="font-size: 16px; margin: 0px 0;">Detect and classify suspicious network traffic in real-time using ML models trained on Wireshark packet data.</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Detect and classify suspicious network traffic in real-time using ML models trained on Wireshark packet data.</p>
                                 </blockquote><br />
 
                                 <h6 style="text-align: left; margin-left: 0;">Summary Introduction:</h6>
                                    <blockquote style="text-align: left; margin-left: 0;">
-									<p style="font-size: 16px; margin: 0px 0;">This Project transforms raw Wireshark packet captures into actionable cybersecurity insights. Network traffic is streamed via Kafka, processed in PySpark, and analyzed by a TensorFlow autoencoder trained to flag anomalies and potential intrusions. Deployed through a GraphQL API and visualized in Grafana, the system provides an intelligent intrusion detection pipeline capable of adapting to evolving cyber threats.</p>
+									<p style="font-size: 14px; margin: 0px 0;">This Project transforms raw Wireshark packet captures into actionable cybersecurity insights. Network traffic is streamed via Kafka, processed in PySpark, and analyzed by a TensorFlow autoencoder trained to flag anomalies and potential intrusions. Deployed through a GraphQL API and visualized in Grafana, the system provides an intelligent intrusion detection pipeline capable of adapting to evolving cyber threats.</p>
 									</blockquote>
 
                                 
@@ -99,39 +99,39 @@
 								                              								
                                 <h5 style="text-align: left; margin-left: 0;">🧩 Architecture:</h5>
                                 <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
-                                <p style="font-size: 18px; margin: 0px 0;">[Wireshark Packet Capture (.pcap)]</p>
+                                <p style="font-size: 16px; margin: 0px 0;">[Wireshark Packet Capture (.pcap)]</p>
                                 <p style="font-size: 14px; margin: 0px 0;"> ↓ </p>
-                                <p style="font-size: 18px; margin: 0px 0;">[Kafka Streaming Ingestion]</p>
+                                <p style="font-size: 16px; margin: 0px 0;">[Kafka Streaming Ingestion]</p>
                                 <p style="font-size: 14px; margin: 0px 0;"> ↓ </p>
-                                <p style="font-size: 18px; margin: 0px 0;">[Feature Extraction using PySpark]</p>
+                                <p style="font-size: 16px; margin: 0px 0;">[Feature Extraction using PySpark]</p>
                                 <p style="font-size: 14px; margin: 0px 0;"> ↓ </p>
-                                <p style="font-size: 18px; margin: 0px 0;">[Autoencoder + Random Forest Anomaly Detection]</p>
+                                <p style="font-size: 16px; margin: 0px 0;">[Autoencoder + Random Forest Anomaly Detection]</p>
                                 <p style="font-size: 14px; margin: 0px 0;"> ↓ </p>
-                                <p style="font-size: 18px; margin: 0px 0;">[Prediction API: Flask + GraphQL]</p>
+                                <p style="font-size: 16px; margin: 0px 0;">[Prediction API: Flask + GraphQL]</p>
                                 <p style="font-size: 14px; margin: 0px 0;"> ↓ </p>
-                                <p style="font-size: 18px; margin: 0px 0;">[Security Dashboard: Kibana / Grafana]</p>
+                                <p style="font-size: 16px; margin: 0px 0;">[Security Dashboard: Kibana / Grafana]</p>
                                 </blockquote><br />
                                 
                                 <h5 style="text-align: left; margin-left: 0;">🛠️ Tool Stack:</h5>
 								<blockquote style="text-align: left; margin-left: 0;">
 									
-								 	<p style="font-size: 18px; margin: 0px 0;">1. Data: Wireshark [pcap] files.</p>
-									<p style="font-size: 18px; margin: 0px 0;">2. Processing: PySpark, Kafka</p>
-                                    <p style="font-size: 18px; margin: 0px 0;">3. ML: TensorFlow Autoencoder, Random Forest</p>
-                                    <p style="font-size: 18px; margin: 0px 0;">4. Storage: Hadoop, Elasticsearch</p>
-                                    <p style="font-size: 18px; margin: 0px 0;">5. Visualization: Kibana, Grafana</p>
+								 	<p style="font-size: 16px; margin: 0px 0;">1. Data: Wireshark [pcap] files.</p>
+									<p style="font-size: 16px; margin: 0px 0;">2. Processing: PySpark, Kafka</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">3. ML: TensorFlow Autoencoder, Random Forest</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">4. Storage: Hadoop, Elasticsearch</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">5. Visualization: Kibana, Grafana</p>
                                     
 									</blockquote>
 
                                     <h5 style="text-align: left; margin-left: 0;">⚙️ Implementation Steps:</h5>
                                     <blockquote style="text-align: left; margin-left: 0;">
-                                    <p style="font-size: 18px; margin: 0px 0;">1. Capture or download Wireshark network traffic data.</p>
-                                    <p style="font-size: 18px; margin: 0px 0;">2. Set up Kafka to stream packet data in real-time.</p>
-                                    <p style="font-size: 18px; margin: 0px 0;">3. Use PySpark to extract relevant features from raw packet data.</p>
-                                    <p style="font-size: 18px; margin: 0px 0;">4. Train an Autoencoder to learn normal traffic patterns and identify anomalies.</p>
-                                    <p style="font-size: 18px; margin: 0px 0;">5. Build a Random Forest classifier to categorize types of intrusions.</p>
-                                    <p style="font-size: 18px; margin: 0px 0;">6. Develop a Flask API with GraphQL to serve real-time predictions.</p>
-                                    <p style="font-size: 18px; margin: 0px 0;">7. Visualize detected intrusions and traffic patterns using Kibana/Grafana dashboards.</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">1. Capture or download Wireshark network traffic data.</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">2. Set up Kafka to stream packet data in real-time.</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">3. Use PySpark to extract relevant features from raw packet data.</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">4. Train an Autoencoder to learn normal traffic patterns and identify anomalies.</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">5. Build a Random Forest classifier to categorize types of intrusions.</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">6. Develop a Flask API with GraphQL to serve real-time predictions.</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">7. Visualize detected intrusions and traffic patterns using Kibana/Grafana dashboards.</p>
                                     </blockquote>
 
 									</header>
@@ -148,13 +148,13 @@
 								<!--sed ullamcorper</h2>--></h4>
 								<h6 style="text-align: left; margin-left: 0;">Objective:</h6>
                                 <blockquote style="text-align: left; margin-left: 0; margin: 0px 0;">
-                                <p style="font-size: 16px; margin: 0px 0;">Build a real-time fraud detection pipeline analyzing blockchain transactions (e.g., Bitcoin or Ethereum) to identify anomalous or suspicious behavior.</p>
+                                <p style="font-size: 14px; margin: 0px 0;">Build a real-time fraud detection pipeline analyzing blockchain transactions (e.g., Bitcoin or Ethereum) to identify anomalous or suspicious behavior.</p>
                                 </blockquote><br />
 
                                 <h6 style="text-align: left; margin-left: 0;">Summary Introduction:</h6>
 
                                 <blockquote style="text-align: left; margin-left: 0;">
-								<p style="font-size: 16px; margin: 0px 0;">This Project analyzes blockchain transaction streams from APIs like BlockCypher and Etherscan to detect abnormal wallet behavior. Data flows through Kafka into Hadoop for scalable processing, where TensorFlow models trained on transactional patterns identify potential fraud in real-time. The results are exposed via a GraphQL API and visualized on an analytics dashboard, offering an intelligent defense layer for decentralized financial ecosystems.</p>
+								<p style="font-size: 14px; margin: 0px 0;">This Project analyzes blockchain transaction streams from APIs like BlockCypher and Etherscan to detect abnormal wallet behavior. Data flows through Kafka into Hadoop for scalable processing, where TensorFlow models trained on transactional patterns identify potential fraud in real-time. The results are exposed via a GraphQL API and visualized on an analytics dashboard, offering an intelligent defense layer for decentralized financial ecosystems.</p>
 								</blockquote>
 
                                
@@ -176,40 +176,39 @@
 								                              								
                                 <h5 style="text-align: left; margin-left: 0;">🧩 Architecture:</h5>
                                 <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
-                                <p style="font-size: 18px; margin: 0px 0;">[Blockchain Data API (e.g., BlockCypher / Etherscan)]</p>
+                                <p style="font-size: 16px; margin: 0px 0;">[Blockchain Data API (e.g., BlockCypher / Etherscan)]</p>
                                 <p style="font-size: 14px; margin: 0px 0;"> ↓ </p>
-                                <p style="font-size: 18px; margin: 0px 0;">[Kafka Stream Processing]</p>
+                                <p style="font-size: 16px; margin: 0px 0;">[Kafka Stream Processing]</p>
                                 <p style="font-size: 14px; margin: 0px 0;"> ↓ </p>
-                                <p style="font-size: 18px; margin: 0px 0;">[HDFS Storage + Feature Engineering via Hadoop / PySpark]</p>
+                                <p style="font-size: 16px; margin: 0px 0;">[HDFS Storage + Feature Engineering via Hadoop / PySpark]</p>
                                 <p style="font-size: 14px; margin: 0px 0;"> ↓ </p>
-                                <p style="font-size: 18px; margin: 0px 0;">[TensorFlow Model: Anomaly / Fraud Detection]</p>
+                                <p style="font-size: 16px; margin: 0px 0;">[TensorFlow Model: Anomaly / Fraud Detection]</p>
                                 <p style="font-size: 14px; margin: 0px 0;"> ↓ </p>
-                                <p style="font-size: 18px; margin: 0px 0;">[GraphQL API Layer + FastAPI Endpoint]</p>
+                                <p style="font-size: 16px; margin: 0px 0;">[GraphQL API Layer + FastAPI Endpoint]</p>
                                 <p style="font-size: 14px; margin: 0px 0;"> ↓ </p>
-                                <p style="font-size: 18px; margin: 0px 0;">[Visualization Dashboard: Power BI / Streamlit]</p>
+                                <p style="font-size: 16px; margin: 0px 0;">[Visualization Dashboard: Power BI / Streamlit]</p>
                                 </blockquote><br />
                                 
                                 <h5 style="text-align: left; margin-left: 0;">🛠️ Tool Stack:</h5>
 								<blockquote style="text-align: left; margin-left: 0;">
 									
-								 	<p style="font-size: 18px; margin: 0px 0;">1. Data: Free blockchain API (BlockCypher, Bitquery, Etherscan)</p>
-									<p style="font-size: 18px; margin: 0px 0;">2. Streaming: Apache Kafka</p>
-                                    <p style="font-size: 18px; margin: 0px 0;">3. Storage: Hadoop HDFS</p>
-                                    <p style="font-size: 18px; margin: 0px 0;">4. ML: TensorFlow, Autoencoders</p>
-                                    <p style="font-size: 18px; margin: 0px 0;">5. API: GraphQL + FastAPI</p>
-                                    <p style="font-size: 18px; margin: 0px 0;">6. Visualization: Power BI, Streamlit</p>
+								 	<p style="font-size: 16px; margin: 0px 0;">1. Data: Free blockchain API (BlockCypher, Bitquery, Etherscan)</p>
+									<p style="font-size: 16px; margin: 0px 0;">2. Streaming: Apache Kafka</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">3. Storage: Hadoop HDFS</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">4. ML: TensorFlow, Autoencoders</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">5. API: GraphQL + FastAPI</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">6. Visualization: Power BI, Streamlit</p>
                                     
 									</blockquote>
 
                                     <h5 style="text-align: left; margin-left: 0;">⚙️ Implementation Steps:</h5>
                                     <blockquote style="text-align: left; margin-left: 0;">
-                                    <p style="font-size: 18px; margin: 0px 0;">1. Capture or download Wireshark network traffic data.</p>
-                                    <p style="font-size: 18px; margin: 0px 0;">2. Set up Kafka to stream packet data in real-time.</p>
-                                    <p style="font-size: 18px; margin: 0px 0;">3. Use PySpark to extract relevant features from raw packet data.</p>
-                                    <p style="font-size: 18px; margin: 0px 0;">4. Train an Autoencoder to learn normal traffic patterns and identify anomalies.</p>
-                                    <p style="font-size: 18px; margin: 0px 0;">5. Build a Random Forest classifier to categorize types of intrusions.</p>
-                                    <p style="font-size: 18px; margin: 0px 0;">6. Develop a Flask API with GraphQL to serve real-time predictions.</p>
-                                    <p style="font-size: 18px; margin: 0px 0;">7. Visualize detected intrusions and traffic patterns using Kibana/Grafana dashboards.</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">1. Connect to blockchain data API to stream transactions.</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">2. Ingest into Kafka → store in Hadoop.</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">3. Perform feature engineering (transaction volume, address frequency, flow graph).</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">4. Train TensorFlow autoencoder to detect anomalous transactions.</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">5. Create real-time dashboard for fraud patterns visualization.</p>
+                                   
                                     </blockquote>
                    
 									</header>
