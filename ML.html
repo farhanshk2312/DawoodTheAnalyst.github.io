@@ -78,10 +78,6 @@
 									<p style="font-size: 14px; margin: 0px 0;">This Project transforms raw Wireshark packet captures into actionable cybersecurity insights. Network traffic is streamed via Kafka, processed in PySpark, and analyzed by a TensorFlow autoencoder trained to flag anomalies and potential intrusions. Deployed through a GraphQL API and visualized in Grafana, the system provides an intelligent intrusion detection pipeline capable of adapting to evolving cyber threats.</p>
 									</blockquote>
 
-                                
-
-                                
-
 							<ul class="actions special">
 								<li style="margin-right: 720px;">
 									 <a href="javascript:void(0)" class="button primary toggle-btn" data-target="network">Explore</a>
@@ -156,8 +152,6 @@
                                 <blockquote style="text-align: left; margin-left: 0;">
 								<p style="font-size: 14px; margin: 0px 0;">This Project analyzes blockchain transaction streams from APIs like BlockCypher and Etherscan to detect abnormal wallet behavior. Data flows through Kafka into Hadoop for scalable processing, where TensorFlow models trained on transactional patterns identify potential fraud in real-time. The results are exposed via a GraphQL API and visualized on an analytics dashboard, offering an intelligent defense layer for decentralized financial ecosystems.</p>
 								</blockquote>
-
-                               
 
 							<ul class="actions special">
 								<li style="margin-right: 720px;">
@@ -290,9 +284,89 @@
                                     </blockquote>
                    
 									</header>
-
 						</div>
-								
+							
+					</section>
+
+					<!-- Two -->
+						<section class="spotlight">
+							<div class="image"><img src="images/stock_market.jpg" alt="" /></div>
+							<div class="content">
+								<h4>Predicting Stock Trends Using Technical and Institutional Indicators<br />
+								<!--sed ullamcorper</h2>--></h4>
+								<h6 style="text-align: left; margin-left: 0;">Objective:</h6>
+                                <blockquote style="text-align: left; margin-left: 0; margin: 0px 0;">
+                                <p style="font-size: 14px; margin: 0px 0;">Build an ML system that combines RSI, Volume Profile, and FII/DII activity to forecast stock movements in Indian markets.</p>
+                                </blockquote><br />
+
+                                <h6 style="text-align: left; margin-left: 0;">Summary Introduction:</h6>
+
+                                <blockquote style="text-align: left; margin-left: 0;">
+								<p style="font-size: 14px; margin: 0px 0;">This project aims to build a machine learning model that predicts whether a stock will move up or down in the near term (next day or next hour) based on technical momentum indicators (RSI), volume concentration (volume profile), and institutional investor behavior (FII/DII net flows).</p>
+								</blockquote>
+
+							<ul class="actions special">
+								<li style="margin-right: 720px;">
+									 <a href="javascript:void(0)" class="button primary toggle-btn" data-target="stock_market">Explore</a>
+								</li>
+							</ul>
+							</div>
+						</section>
+
+                        
+					 <!-- One -->
+					<section id="stock_market" class="wrapper style1 special collapsible-section">
+					
+						<div style="text-align:left;" , class="inner">
+							<header class="major">
+								                              								
+                                <h5 style="text-align: left; margin-left: 0;">🧩 Architecture:</h5>
+                                <blockquote style="text-align: left; margin-left: 0; margin: 4px 0;">
+                                <p style="font-size: 16px; margin: 0px 0;">Data Ingestion Layer [NSE Data, FII/DII Reports]</p>
+                                <p style="font-size: 14px; margin: 0px 0;"> ↓ </p>
+                                <p style="font-size: 16px; margin: 0px 0;">Data Preprocessing & Feature Engineering [RSI, Volume, FII]</p>
+                                <p style="font-size: 14px; margin: 0px 0;"> ↓ </p>
+                                <p style="font-size: 16px; margin: 0px 0;">Machine Learning Model [LSTM / XGBoost / RandomForest]</p>
+                                <p style="font-size: 14px; margin: 0px 0;"> ↓ </p>
+                                <p style="font-size: 16px; margin: 0px 0;">Prediction & Visualization [Streamlit / Power BI]</p>
+                                </blockquote><br />
+                                
+                                <h5 style="text-align: left; margin-left: 0;">🛠️ Tool Stack:</h5>
+								<blockquote style="text-align: left; margin-left: 0;">
+									
+								 	<p style="font-size: 16px; margin: 0px 0;">1. Data: NSE API, yfinance, NSE India FII/DII Data</p>
+									<p style="font-size: 16px; margin: 0px 0;">2. Storage: S3, BigQuery</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">3. ML: Scikit-learn, XGBoost, LightGBM</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">4. API: GraphQL + FastAPI</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">5. Visualization: Plotly, Streamlit, Power BI</p>
+									<p style="font-size: 16px; margin: 0px 0;">6. Orchestration: Airflow</p>
+									<p style="font-size: 16px; margin: 0px 0;">7. Deployment: Docker + AWS EC2 / GCP App Engine</p>
+
+                                    
+									</blockquote>
+
+                                    <h5 style="text-align: left; margin-left: 0;">⚙️ Implementation Steps:</h5><br />
+									
+                                    <blockquote style="text-align: left; margin-left: 0;">
+                                    <p style="font-size: 16px; margin: 0px 0;">1. Fetch historical stock data for top NIFTY 50 stocks using yfinance or nsetools.</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">2. Scrape or download daily FII/DII data from NSE India reports / CDSL</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">3. Optionally, add NIFTY sector index data for correlation.</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">4. Compute RSI using TA-Lib or pandas_ta.</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">5. Calculate Volume-Weighted Average Price (VWAP) and Volume Spike Ratios.</p>
+                                    <p style="font-size: 16px; margin: 0px 0;">6. Identify accumulation zones (high volume near low RSI) and distribution zones (high volume near high RSI).</p>
+									<p style="font-size: 16px; margin: 0px 0;">7. Parse daily net buy/sell value for FIIs and DIIs.</p>
+									<p style="font-size: 16px; margin: 0px 0;">8. Train Model using XGBoost or LightGBM for tabular, interpretable results.</p>
+									<p style="font-size: 16px; margin: 0px 0;">9. Show live RSI, volume, and FII/DII data trends.</p>
+									<p style="font-size: 16px; margin: 0px 0;">10. Display predicted movement (e.g., “Likely Upward Move” or “Potential Correction”).</p>
+									<p style="font-size: 16px; margin: 0px 0;">11. Automate daily pipeline with Apache Airflow or a cron job.</p>
+									<p style="font-size: 16px; margin: 0px 0;">12. Deploy model inference endpoint with Flask + Docker.</p>
+									<p style="font-size: 16px; margin: 0px 0;">13. Host dashboard on AWS / GCP for real-time insights.</p>
+
+								</blockquote>
+                   
+									</header>
+						</div>
+							
 					</section>
 
 
